@@ -35,6 +35,11 @@
         <input class="form-control form-control-lg" type="text" name="txtcomissao" placeholder="Comissão">
         <br>
         
+         <label for="exampleFormControlInput1">Salário Fixo</label>
+        <br>
+        <input class="form-control form-control-lg" type="text" name="txtsalfixo" placeholder="Salário Fixo">
+        <br>
+        
         <button type="submit" class="btn btn-danger">Calcular</button>
         
     </form>
