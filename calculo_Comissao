@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Projeto Comissões</title>
+</head>
+
+<body class="container">
+
+    <h1 class="text-center">Calcula a Comissão dos Vendedores</h1>
+    <hr>
+    
+    <form method="GET">
+        
+        <label for="exampleFormControlInput1">Nome</label>
+        
+        <br>
+        <input class="form-control form-control-lg" type="text" name="txtnome" placeholder="Nome">
+        <br>
+       
+        <label for="exampleFormControlInput1">Salário Fixo</label>
+        <br>
+        <input class="form-control form-control-lg" type="text" name="txtsalfixo" placeholder="Salário Fixo">
+        <br>
+    
+        <label for="exampleFormControlInput1">Vendas</label>
+        <br>
+        <input class="form-control form-control-lg" type="text" name="txtvendas" placeholder="Vendas">
+        <br>
+
+        <label for="exampleFormControlInput1">% Da Comissão</label>
+        <br>
+        <input class="form-control form-control-lg" type="text" name="txtcomissao" placeholder="Comissão">
+        <br>
+        
+        <button type="submit" class="btn btn-danger">Calcular</button>
+        
+    </form>
+
+    <?php
+    
+        if ($_GET) {
+        
+            //Rcebe dados do formulário
+            $nome=$_GET['txtnome'];
+            $salfixo=$_GET['txtsalfixo'];
+            $vendas=$_GET['txtvendas'];
+            $comissao=$_GET['txtcomissao'];
+
+            // Calcula Comissao
+            $vrcomissao = ($vendas*$comissao)/100;
+            $saltotal = $salfixo+$vrcomissao;
+
+            // Mostrando Resultado
+            
+            echo "<br> <hr> O Salário Total de $nome é $saltotal";
+            echo "<hr>";
+        
+        }
+    ?>
+
+</body>
+</html>
