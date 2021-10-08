@@ -15,7 +15,7 @@
     
     <form method="GET">
         
-        <label for="exampleFormControlInput1">CPF</label>
+        <label for="exampleFormControlInput1">Nome</label>
         
         <br>
         <input class="form-control form-control-lg" type="text" name="txtnome" placeholder="Nome">
@@ -55,7 +55,7 @@
             $saltotal = $salfixo+$vrcomissao;
 
             // Mostrando Resultado
-            
+            // Confira Salario
             echo "<br> <hr> O Salário Total de $nome é $saltotal";
             echo "<hr>";
         
