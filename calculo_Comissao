@@ -10,7 +10,7 @@
 
 <body class="container">
 
-    <h1 class="text-center">Calcula a Comissão dos Vendedores</h1>
+    <h1 class="text-center">Calcula Comissão</h1>
     <hr>
     
     <form method="GET">
