@@ -55,7 +55,7 @@
             $saltotal = $salfixo+$vrcomissao;
 
             // Mostrando Resultado
-            
+            // Confira Salario
             echo "<br> <hr> O Salário Total de $nome é $saltotal";
             echo "<hr>";
         
